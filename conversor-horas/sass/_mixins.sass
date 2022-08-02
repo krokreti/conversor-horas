@@ -1,0 +1,19 @@
+@use 'variables'
+
+@mixin container
+    background-color: variables.$primary-color
+    height: fit-content
+    color: variables.$text-color
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+
+@mixin mobile
+    @media(max-width: 600px)
+        @content
+
+@mixin tablet
+    @media(max-width: 768px)
+        @content
+    
